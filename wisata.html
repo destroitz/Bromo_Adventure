@@ -4,9 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wisata</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
-   * {
+    * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -14,156 +13,73 @@
     }
 
     body {
-  background-color: #f4f4f4;
-  color: #333;
-  padding-top: 60px;
-  font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      padding-top: 60px;
     }
 
     /* NAVBAR */
     .navbar {
-  background: #333;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 50px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
+      background: linear-gradient(90deg, #007bff, #00c6ff);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
 
     .navbar h1 {
-      font-size: 30px;
+      font-size: 24px;
+      font-weight: bold;
     }
 
     .nav-links {
       list-style: none;
       display: flex;
-      gap: 30px;
-    }
-
-    .nav-links li {
-      position: relative;
+      gap: 25px;
     }
 
     .nav-links a {
       color: #fff;
       text-decoration: none;
-      padding: 8px 12px;
-      transition: background 0.3s ease;
+      padding: 6px 12px;
+      transition: 0.3s;
+      border-radius: 4px;
     }
 
     .nav-links a:hover {
-      background: #575757;
-      border-radius: 4px;
+      background: rgba(255,255,255,0.2);
     }
 
-    /* DROPDOWN */
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background: #444;
-      top: 40px;
-      left: 0;
-      min-width: 160px;
-      border-radius: 4px;
-      overflow: hidden;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    }
-
-    .dropdown-content a {
-      display: block;
-      padding: 10px;
-      color: #fff;
-      text-align: left;
-    }
-
-    .dropdown-content a:hover {
-      background: #575757;
-    }
-
-    .nav-links li:hover .dropdown-content {
-      display: block;
-    }
-
-    /* HERO SECTION */
-	.hero {
-  background: url('images/Bromo.jpg') no-repeat center center/cover;
-  background: url('images/tumpak Sewu.jpg') no-repeat center center/cover;
-  background: url('images/kawah Ijen.jpg') no-repeat center center/cover;
-  background: url('images/gunung Bromo.jpg') no-repeat center center/cover;
-}
-
-    .hero {
-  height: 100vh;
-  background: url('images/bg-hero.jpg') no-repeat center center/cover;
-  background: url('images/Tumpak Sewu.jpg') no-repeat center center/cover;
-  background: url('images/kawah Ijen.jpg') no-repeat center center/cover;
-  background: url('images/gunung Bromo.jpg') no-repeat center center/cover;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px;
-    }
-
-    .hero h2 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-
-    .btn-primary {
-     padding: 10px 20px;
-  background: #fff;
-  color: #007bff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-    }
-
-    .btn-primary:hover {
-      background: #007bff;
-      color: #fff;
-    }
-
-    /* SECTION */
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    footer {
-      background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
-    }
-	.dropdown-content.show { display: block; }
+    /* WISATA SECTION */
     .wisata-container {
-      max-width: 1000px;
+      max-width: 1100px;
       margin: auto;
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
-    .dropdown-wilayah {
+    .wisata-container h2 {
+      text-align: center;
       margin-bottom: 30px;
+      color: #007bff;
+    }
+
+    .dropdown-wilayah {
+      margin-bottom: 25px;
       text-align: center;
     }
     select {
       padding: 10px;
       font-size: 16px;
       border-radius: 6px;
+      border: 1px solid #ccc;
     }
+
     .wisata-list {
       display: none;
     }
@@ -173,7 +89,7 @@
     .wisata-item {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
       background: white;
       border-radius: 10px;
       overflow: hidden;
@@ -182,20 +98,30 @@
     .wisata-item img {
       width: 100%;
       max-width: 400px;
-      height: auto;
+      height: 250px;
       object-fit: cover;
       flex: 1 1 300px;
     }
     .wisata-info {
       flex: 1 1 300px;
       padding: 20px;
+      background: #fafafa;
     }
     .wisata-info h3 {
       margin-bottom: 10px;
+      color: #007bff;
     }
-  </style>
-  <title>Tombol WA Kotak</title>
-  <style>
+
+    /* FOOTER */
+    footer {
+      background: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 12px 0;
+      margin-top: 40px;
+    }
+
+    /* WA BUTTON */
     .wa-box {
       position: fixed;
       bottom: 20px;
@@ -205,21 +131,18 @@
       padding: 12px 18px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      font-size: 16px;
-      font-family: Arial, sans-serif;
+      font-size: 15px;
       text-decoration: none;
       display: flex;
       align-items: center;
       z-index: 1000;
       border: 2px solid white;
     }
-
     .wa-box img {
       width: 20px;
       height: 20px;
       margin-right: 10px;
     }
-
     .wa-box:hover {
       background-color: #128c7e;
     }
@@ -227,24 +150,14 @@
 </head>
 <body>
 
-<!-- Tombol WhatsApp Kotak -->
-<a class="wa-box" href="https://wa.me/6282232689999" target="_blank">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
-    Booking disini !!
-</a>
-
-</body>
-</html>
-</head>
-<body>
-
+  <!-- NAVBAR -->
   <nav class="navbar">
     <h1>BROMO ADVENTURE</h1>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.php">Home</a></li>
       <li><a href="tentang.html">Tentang</a></li>
-      <li><a href="Wisata.html">Wisata</a></li>
-	  <li><a href="kontak.html">Kontak</a></li>
+      <li><a href="wisata.html">Wisata</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
     </ul>
   </nav>
 
@@ -256,131 +169,44 @@
       <select id="wilayah" onchange="tampilkanWilayah()">
         <option value="probolinggo">Probolinggo</option>
         <option value="banyuwangi">Banyuwangi</option>
-		<option value="Situbondo">Situbondo</option>
-        <option value="Bondowoso">Bondowoso</option>
-		<option value="Jember">Jember</option>
-		<option value="Lumajang">Lumajang</option>
+        <option value="situbondo">Situbondo</option>
+        <option value="bondowoso">Bondowoso</option>
+        <option value="jember">Jember</option>
+        <option value="lumajang">Lumajang</option>
       </select>
     </div>
 
-    <!-- Probolinggo -->
+    <!-- Contoh Probolinggo -->
     <div class="wisata-list" id="probolinggo">
       <div class="wisata-item">
-        <img src="images/bg-hero.jpg" alt="Gunung Bromo">
+        <img src="images/gunung bromo.jpg" alt="Gunung Bromo">
         <div class="wisata-info">
           <h3>Gunung Bromo</h3>
-          <p>Gunung Bromo adalah salah satu ikon wisata Jawa Timur yang berada di wilayah Kabupaten Probolinggo. Dikenal karena sunrise dan kawahnya.</p>
-        </div>
-      </div>
-      <div class="wisata-item">
-        <img src="https://imgur.com/a/sGUmvbr" alt="Air Terjun Madakaripura">
-        <div class="wisata-info">
-          <h3>Air Terjun Madakaripura</h3>
-          <p>Air terjun ini adalah salah satu yang tertinggi di Pulau Jawa. Lokasinya dekat Gunung Bromo dan terkenal dengan keindahan tebingnya.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Banyuwangi -->
-    <div class="wisata-list" id="banyuwangi">
-      <div class="wisata-item">
-        <img src="images/Kawah Ijen.jpg" alt="Kawah Ijen">
-        <div class="wisata-info">
-          <h3>Kawah Ijen</h3>
-          <p>Kawah Ijen terkenal dengan fenomena api birunya dan aktivitas para penambang belerang. Terletak di perbatasan Banyuwangi dan Bondowoso.</p>
-        </div>
-      </div>
-      <div class="wisata-item">
-        <img src="images/pulau Merah.png" alt="Pantai Pulau Merah">
-        <div class="wisata-info">
-          <h3>Pantai Pulau Merah</h3>
-          <p>Pantai cantik dengan pasir putih dan bukit merah di tengah laut ini sangat cocok untuk surfing dan menikmati sunset di Banyuwangi.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-	 <!-- Bondowoso -->
-    <div class="wisata-list" id="Bondowoso">
-      <div class="wisata-item">
-        <img src="images/bg-hero.jpg" alt="Gunung Bromo">
-        <div class="wisata-info">
-          <h3>Gunung Bromo</h3>
-          <p>Gunung Bromo adalah salah satu ikon wisata Jawa Timur yang berada di wilayah Kabupaten Probolinggo. Dikenal karena sunrise dan kawahnya.</p>
+          <p>Gunung Bromo adalah ikon wisata Jawa Timur yang berada di Kabupaten Probolinggo, terkenal dengan sunrise dan kawahnya.</p>
         </div>
       </div>
       <div class="wisata-item">
         <img src="images/Madakaripura.jpg" alt="Air Terjun Madakaripura">
         <div class="wisata-info">
           <h3>Air Terjun Madakaripura</h3>
-          <p>Air terjun ini adalah salah satu yang tertinggi di Pulau Jawa. Lokasinya dekat Gunung Bromo dan terkenal dengan keindahan tebingnya.</p>
+          <p>Air terjun tertinggi di Pulau Jawa dengan tebing hijau yang indah, berlokasi dekat dengan Gunung Bromo.</p>
         </div>
       </div>
     </div>
 
-    <!-- Situbondo -->
-    <div class="wisata-list" id="Situbondo">
-      <div class="wisata-item">
-        <img src="images/Kawah Ijen.jpg" alt="Kawah Ijen">
-        <div class="wisata-info">
-          <h3>Kawah Ijen</h3>
-          <p>Kawah Ijen terkenal dengan fenomena api birunya dan aktivitas para penambang belerang. Terletak di perbatasan Banyuwangi dan Bondowoso.</p>
-        </div>
-      </div>
-      <div class="wisata-item">
-        <img src="images/pulau Merah.png" alt="Pantai Pulau Merah">
-        <div class="wisata-info">
-          <h3>Pantai Pulau Merah</h3>
-          <p>Pantai cantik dengan pasir putih dan bukit merah di tengah laut ini sangat cocok untuk surfing dan menikmati sunset di Banyuwangi.</p>
-        </div>
-      </div>
-    </div>
+    <!-- Tambahkan list lainnya sesuai wilayah -->
+    
   </div>
-  
-	<!-- Jember -->
-    <div class="wisata-list" id="Jember">
-      <div class="wisata-item">
-        <img src="images/Watu ulo.jpg" alt="Kawah Ijen">
-        <div class="wisata-info">
-          <h3>Watu Ulo</h3>
-          <p>Pantai Watu Ulo adalah sebuah destinasi wisata bahari yang terletak di Desa Sumberejo, Kecamatan Ambulu, Kabupaten Jember, Jawa Timur, 
-		  sekitar 40 kilometer di selatan kota Jember.</p>
-        </div>
-      </div>
-      <div class="wisata-item">
-        <img src="images/Meru Betiri.jpg" alt="Meru Betiri">
-        <div class="wisata-info">
-          <h3>Meru Betiri</h3>
-          <p>Meru Betiri, Taman Nasional dan Surga untuk Petualang 
-		  Taman Nasional Meru Betiri saat ini dikelola untuk pelestarian ekosistem serta biasa digunakan untuk penelitian, wisata edukasi, 
-		  penunjang budidaya, pendidikan, dan rekreasi. Lokasi taman ini ada di Kecamatan Pasanggaran, Kabupaten Banyuwangi dan Kabupaten Jember.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-    <!-- Lumajang -->
-		<div class="wisata-list" id="Lumajang">
-			<div class="wisata-item">
-			<img src="images/Tumpak Sewu.jpg" alt="tumpak Sewu">
-			<div class="wisata-info">
-          <h3>Tumpak Sewu</h3>
-          <p>Keindahan destinasi wisata alam ini memang menakjubkan. Aliran air terjun melebar dengan tebing air terjun yang mencapai ketinggian 
-		  sekitar 100 meter lebih, menghasilkan percikan embun. Tak heran, air terjun ini mendapat julukan Niagaranya Indonesia..</p>
-        </div>
-      </div>
-      <div class="wisata-item">
-        <img src="images/gunung semeru.jpg" alt="gunung semeru">
-        <div class="wisata-info">
-          <h3>Gunung semeru</h3>
-          <p>Gunung Semeru merupakan salah satu gunung tertinggi di Pulau Jawa. Ini adalah stratovolcano di Taman Nasional Bromo Tengger Semeru.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+
   <footer>
     <p>&copy; 2025 Bromo ADVENTURE. Semua hak dilindungi.</p>
   </footer>
+
+  <!-- Tombol WA -->
+  <a class="wa-box" href="https://wa.me/6282232689999" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    Booking Disini !!
+  </a>
 
   <script>
     function tampilkanWilayah() {
@@ -389,7 +215,7 @@
       lists.forEach(list => list.classList.remove("active"));
       document.getElementById(wilayah).classList.add("active");
     }
-    // Tampilkan default
+    // default
     window.onload = tampilkanWilayah;
   </script>
 </body>
