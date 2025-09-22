@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Destinasi Wisata</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* Background gradasi animasi */
+    body {
+      min-height: 100vh;
+      padding-top: 70px;
+      color: #333;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: rgba(51, 51, 51, 0.9);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .navbar h1 {
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: #007bff;
+    }
+
+    /* Kontainer konten */
+    .tentang-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .tentang-container h2 {
+      margin-bottom: 15px;
+      color: #007bff;
+    }
+
+    .tentang-container p {
+      margin-bottom: 16px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* Tombol WhatsApp */
+    .wa-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 18px;
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+      transition: 0.3s;
+    }
+
+    .wa-box img {
+      width: 22px;
+      height: 22px;
+      margin-right: 8px;
+    }
+
+    .wa-box:hover {
+      background-color: #128c7e;
+    }
+
+    /* FOOTER */
+    footer {
+      background: rgba(51, 51, 51, 0.9);
+      color: #fff;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      border-top: 3px solid #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1>BROMO ADVENTURE</h1>
+    <ul class="nav-links">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="wisata.html">Wisata</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="tentang-container">
+    <h2>Tentang Destinasi Wisata</h2>
+    <p>Indonesia adalah negara yang kaya akan destinasi wisata alam, budaya, dan sejarah. Dari pegunungan yang megah hingga pantai tropis yang menakjubkan, setiap daerah memiliki keunikan dan daya tarik tersendiri.</p>
+    <p>Beberapa destinasi populer seperti Gunung Bromo di Probolinggo, Kawah Ijen di Banyuwangi, hingga Danau Toba di Sumatera Utara selalu menjadi tujuan favorit wisatawan domestik maupun mancanegara.</p>
+    <p>Melalui halaman ini, kami berharap dapat memberikan informasi yang berguna, inspirasi perjalanan, serta panduan untuk mengeksplorasi kekayaan pariwisata Indonesia dengan lebih mudah dan menyenangkan.</p>
+    <p>Jangan lupa untuk selalu menjaga kebersihan, menghormati budaya lokal, dan mendukung usaha masyarakat sekitar dalam setiap kunjungan wisata Anda.</p>
+  </div>
+
+  <div class="tentang-container">
+    <h2>Bagaimana cara ke Gunung Bromo?</h2>
+    <p>Cara menuju ke obyek wisata Bromo saat ini sangat mudah, banyak rute alternatif pilihan yang dapat kamu tempuh.</p>
+    <p>Mulai dari kota Surabaya, Malang, Banyuwangi lalu menuju pintu masuk di 4 kabupaten yaitu via Probolinggo, via Pasuruan, Malang dan Lumajang.</p>
+    <p>Pada umumnya akses jalan ke lokasi wisata tujuan tersebut dapat ditempuh melalui jalur darat menggunakan kendaraan motor dan mobil.</p>
+    <p>Namun, jika kamu dari Jakarta, Bali, Yogyakarta atau dari luar Pulau Jawa akan menggunakan jalur udara.</p>
+    <p>Maka kamu bisa menuju ke Bandar Udara Abdul Rahman Saleh Malang, atau melalui jalur akses Bandar Udara Juanda Surabaya.</p>
+  </div>
+
+  <div class="tentang-container">
+    <h2>Fasilitas & Cara Pemesanan Paket</h2>
+    <p>Pilihan Paket wisata Bromo di atas terutama no.1 dan 2 ini sangat cocok jika kamu membiarkan biro perjalanan terbaik mengatur program tersebut.</p>
+    <p>Tarif yang kami tawarkan sudah termasuk mobil ber-AC, sopir, bahan bakar, dan juga biaya parkir. Selain itu, harga hotel/penginapan dan sarapan sudah termasuk. Sangat nyaman untuk memilih paket tersebut karena tiket sudah termasuk semua. Hanya pengeluaran pribadi dan makanan yang tidak termasuk.</p>
+    <p>Jadi, kamu perlu membuat pilihan yang baik untuk menemukan pengalaman terbaik. Pemesanan paket silahkan hubungi agent Bromo Tour Travel untuk perjalanan tak terlupakan di Jawa Timur.</p>
+  </div>
+
+  <!-- Tombol WhatsApp -->
+  <a class="wa-box" href="https://wa.me/6282232689999" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    Pesan di sini
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Bromo ADVENTURE. Semua hak dilindungi.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad390, #6a82fb, #fc5c7d);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #333;
+      padding-top: 60px;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+    .navbar h1 { font-size: 26px; font-weight: bold; }
+    .nav-links { list-style: none; display: flex; gap: 25px; }
+    .nav-links li { position: relative; }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      padding: 6px 12px;
+      transition: 0.3s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      background: #ff7eb3;
+      border-radius: 4px;
+    }
+
+    /* FORM KONTAK */
+    .container {
+      max-width: 600px;
+      margin: 100px auto;
+      background: rgba(255,255,255,0.95);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #6a11cb;
+    }
+    label { display: block; margin: 10px 0 5px; font-weight: bold; }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    button {
+      background: linear-gradient(90deg, #ff7eb3, #6a11cb);
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: 0.3s;
+    }
+    button:hover { opacity: 0.85; }
+
+    .map-link { text-align: center; margin-top: 20px; }
+    .map-link a { color: #6a11cb; font-weight: bold; text-decoration: none; }
+    .map-link a:hover { text-decoration: underline; }
+
+    /* SOSIAL MEDIA BUTTONS */
+    .wa-box, .ig-box, .tiktok-box, .facebook-box {
+      position: fixed;
+      right: 20px;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      z-index: 1000;
+      border: 2px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      color: white;
+      font-weight: bold;
+    }
+    .wa-box { bottom: 20px; background: #25d366; }
+    .ig-box { bottom: 70px; background: #e1306c; }
+    .tiktok-box { bottom: 120px; background: #000; border: 2px solid #000; }
+    .facebook-box { bottom: 170px; background: #1877f2; }
+    .wa-box:hover { background: #128c7e; }
+    .ig-box:hover { background: #c22e63; }
+    .tiktok-box:hover { background: #111; }
+    .facebook-box:hover { background: #0e62d0; }
+
+    .wa-box img, .ig-box img, .tiktok-box img, .facebook-box img {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+
+    footer {
+      background: rgba(0, 0, 0, 0.85);
+      color: #fff;
+      text-align: center;
+      padding: 12px 0;
+      margin-top: 50px;
+      font-size: 14px;
+      letter-spacing: 0.5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1>BROMO ADVENTURE</h1>
+    <ul class="nav-links">
+      <li><a href="index.php">Home</a></li>
+      <li><a href="tentang.html">Tentang</a></li>
+      <li><a href="wisata.html">Wisata</a></li>
+      <li><a href="kontak.html" class="active">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- FORM KONTAK -->
+  <div class="container">
+    <h2>Hubungi Kami</h2>
+    <form action="#" method="post">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+
+    <div class="map-link">
+      <p>Alamat: Jl. Mastrip Jrebeng Wetan Kedopok Probolinggo</p>
+      <a href="https://www.google.com/maps/place/Jl.+Mastrip,+Kota+Probolinggo,+Jawa+Timur" target="_blank">
+        📍 Lihat Lokasi di Google Maps
+      </a>
+    </div>
+  </div>
+
+  <!-- SOSIAL MEDIA BUTTONS -->
+  <a class="facebook-box" href="https://facebook.com/usernamekamu" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"> Facebook
+  </a>
+  <a class="tiktok-box" href="https://www.tiktok.com/@usernamekamu" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok"> TikTok
+  </a>
+  <a class="ig-box" href="https://instagram.com/usernamekamu" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"> Instagram
+  </a>
+  <a class="wa-box" href="https://wa.me/6281234567890" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"> WhatsApp
+  </a>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Bromo Adventure. Semua Hak Dilindungi.</p>
+  </footer>
+
+</body>
+</html>
